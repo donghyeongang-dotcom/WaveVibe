@@ -1,0 +1,20 @@
+# Python 실행 캐시 파일
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 가상환경 폴더 (업로드 방지)
+.env
+.venv
+env/
+venv/
+ENV/
+
+# OS 자동 생성 파일 (맥/윈도우)
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 기타
+.ipynb_checkpoints/
