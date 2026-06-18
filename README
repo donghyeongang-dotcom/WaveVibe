@@ -2,10 +2,6 @@
 
 전자회로실험 프로젝트: 오디오 신호 시각화 및 과출력 보호 회로 검증을 위한 파이썬 기반 DSP 분석 툴
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
-![Librosa](https://img.shields.io/badge/Librosa-Audio_Analysis-lightgrey)
-
 ## 📌 Project Overview
 WaveVibe Studio는 아날로그 하드웨어 회로 설계(오디오 자동 감쇠 보호 회로)의 신뢰성을 교차 검증하기 위해 자체 개발한 디지털 신호 처리(DSP) 웹 애플리케이션입니다. 
 
