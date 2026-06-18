@@ -1,0 +1,33 @@
+# 🎵 WaveVibe Studio
+
+전자회로실험 프로젝트: 오디오 신호 시각화 및 과출력 보호 회로 검증을 위한 파이썬 기반 DSP 분석 툴
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![Librosa](https://img.shields.io/badge/Librosa-Audio_Analysis-lightgrey)
+
+## 📌 Project Overview
+WaveVibe Studio는 아날로그 하드웨어 회로 설계(오디오 자동 감쇠 보호 회로)의 신뢰성을 교차 검증하기 위해 자체 개발한 디지털 신호 처리(DSP) 웹 애플리케이션입니다. 
+
+실제 오디오 환경이나 테스트용 표준 신호(예: 3kHz 정현파)를 하드웨어에 인가하기 전, 신호의 주파수 순도와 다이내믹 레인지를 디지털 영역에서 정밀하게 분석하여 "설계 - 구현 - 검증"의 공학적 순환 구조를 완성하는 것을 목표로 합니다.
+
+## ✨ Key Features
+업로드된 `.wav` 파일에 대해 실시간 고속 FFT 연산 및 파형 시각화를 수행합니다.
+
+1. Time Domain Waveform (시간 영역 분석)
+   * 오디오 신호의 진폭(공기 압축) 변화를 시간에 따라 추적합니다.
+   * 스테레오 채널 분리 및 모노 다운믹싱을 지원하여 신호의 피크(Peak) 레벨을 확인합니다.
+2. Frequency Spectrum (주파수 영역 분석 - FFT)
+   * 고속 푸리에 변환(FFT)을 통해 신호를 주파수 성분으로 분해합니다.
+   * 선형(Linear) 및 로그(Log) 스케일을 지원하여 저주파수부터 고주파수(Nyquist Frequency)까지의 하모닉 왜곡(Harmonic Distortion) 여부를 검증합니다.
+3. STFT Spectrogram (스펙트로그램)
+   * 단시간 푸리에 변환(STFT)을 적용하여 시간 흐름에 따른 주파수 에너지 밀도를 시각화합니다.
+   * 인간의 청각적 인지 특성에 맞춘 데시벨(dB) 단위 변환 및 Log Scale 뷰를 제공합니다.
+
+## 🛠️ Tech Stack
+* Framework: Streamlit
+* Audio Processing: Librosa, SciPy (FFT)
+* Data & Math: NumPy
+* Data Visualization: Matplotlib (Custom Sleek Dark Theme)
+
+
